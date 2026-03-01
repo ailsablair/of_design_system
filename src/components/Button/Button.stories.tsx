@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 
@@ -49,5 +50,27 @@ export const DisabledState: Story = {
     color: 'primary',
     size: 'md',
     state: 'disabled',
+  },
+};
+
+// Test Sky Blue secondary color
+export const SecondarySkyBlue: Story = {
+  args: {
+    label: 'Download Evidence',
+    variant: 'solid',
+    color: 'secondary',
+    size: 'md',
+    state: 'default',
+  },
+};
+
+// Test Lava Orange danger color
+export const DangerLavaOrange: Story = {
+  args: {
+    label: 'Delete File',
+    variant: 'solid',
+    color: 'danger',
+    size: 'md',
+    state: 'default',
   },
 };

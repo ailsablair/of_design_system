@@ -1,0 +1,26 @@
+
+> of_design_system@0.1.0 storybook
+> storybook dev -p 6006
+
+@storybook/cli v7.6.23
+
+info => Starting manager..
+WARN No story files found for the specified pattern: src/**/*.mdx
+info => Starting preview..
+╭─────────────────────────────────────────────────────────────────────╮
+│                                                                     │
+│   Storybook 7.6.23 for react-vite started                           │
+│   314 ms for manager and 3.43 s for preview                         │
+│                                                                     │
+│   Local:            http://localhost:6006/                          │
+│   On your network:  http://192.168.0.2:6006/                        │
+│                                                                     │
+│   A new version (10.2.13) is available!                             │
+│                                                                     │
+│   Upgrade now: npx storybook@latest upgrade                         │
+│                                                                     │
+│   Read full changelog:                                              │
+│   https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md   │
+│                                                                     │
+╰─────────────────────────────────────────────────────────────────────╯
+Terminated
