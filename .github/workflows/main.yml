@@ -39,4 +39,4 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Add job summary
-        run: echo '✅ Storybook updated: https://ailsablair.github.io/of_design_system' >> $GITHUB_STEP_SUMMARY
+        run: echo "✅ Storybook updated: https://ailsablair.github.io/of_design_system" >> $GITHUB_STEP_SUMMARY
