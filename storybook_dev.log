@@ -10,7 +10,7 @@ info => Starting preview..
 ╭─────────────────────────────────────────────────────────────────────╮
 │                                                                     │
 │   Storybook 7.6.23 for react-vite started                           │
-│   470 ms for manager and 4.95 s for preview                         │
+│   301 ms for manager and 3.18 s for preview                         │
 │                                                                     │
 │   Local:            http://localhost:6006/                          │
 │   On your network:  http://192.168.0.2:6006/                        │
@@ -23,4 +23,5 @@ info => Starting preview..
 │   https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md   │
 │                                                                     │
 ╰─────────────────────────────────────────────────────────────────────╯
+5:29:13 PM [vite] hmr update /src/components/Icon/Icon.tsx
 Terminated

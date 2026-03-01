@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
+import { Icon } from '../Icon/Icon';
 
 const meta = {
   title: 'Design System/Button',
@@ -72,5 +73,32 @@ export const DangerLavaOrange: Story = {
     color: 'danger',
     size: 'md',
     state: 'default',
+  },
+};
+
+export const WithStartIcon: Story = {
+  args: {
+    label: 'Add New Record',
+    variant: 'solid',
+    color: 'primary',
+    startDecorator: <Icon name="Add" size={20} color="neutral" sx={{ color: 'white' }} />,
+  },
+};
+
+export const WithEndIcon: Story = {
+  args: {
+    label: 'Download CSV',
+    variant: 'outlined',
+    color: 'secondary',
+    endDecorator: <Icon name="Download" size={20} color="secondary" />,
+  },
+};
+
+export const IconButtonGhost: Story = {
+  args: {
+    label: '',
+    variant: 'ghost',
+    color: 'neutral',
+    startDecorator: <Icon name="Settings" size={24} />,
   },
 };
