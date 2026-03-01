@@ -1,0 +1,54 @@
+
+> of_design_system@0.1.0 build-storybook
+> storybook build --output-dir=/tmp/chromatic--8428-C2k328vvmh9c
+
+@storybook/cli v7.6.23
+
+info => Cleaning outputDir: /tmp/chromatic--8428-C2k328vvmh9c
+info => Loading presets
+info => Building manager..
+info => Manager built (900 ms)
+info => Building preview..
+info => Copying static files: /workspaces/of_design_system/node_modules/@storybook/manager/static at /tmp/chromatic--8428-C2k328vvmh9c/sb-common-assets
+WARN No story files found for the specified pattern: src/**/*.mdx
+[36mvite v4.5.14 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 558 modules transformed.
+rendering chunks...
+computing gzip size...
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[32miframe.html                                    [39m[1m[2m 12.76 kB[22m[1m[22m[2m │ gzip:   3.60 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[35mButton.stories-091d88de.css             [39m[1m[2m  1.68 kB[22m[1m[22m[2m │ gzip:   0.56 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-1e5c59db.js                     [39m[1m[2m  0.15 kB[22m[1m[22m[2m │ gzip:   0.15 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mWithTooltip-V3YHNWJZ-832414e0.js        [39m[1m[2m  0.39 kB[22m[1m[22m[2m │ gzip:   0.25 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36msyntaxhighlighter-MJWPISIS-bb09e226.js  [39m[1m[2m  0.40 kB[22m[1m[22m[2m │ gzip:   0.27 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-e7153dc8.js                     [39m[1m[2m  0.47 kB[22m[1m[22m[2m │ gzip:   0.31 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mindex-9322cee5.js                       [39m[1m[2m  0.58 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-2ff2accb.js                     [39m[1m[2m  0.64 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36m_commonjsHelpers-de833af9.js            [39m[1m[2m  0.69 kB[22m[1m[22m[2m │ gzip:   0.38 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mindex-356e4a49.js                       [39m[1m[2m  0.77 kB[22m[1m[22m[2m │ gzip:   0.47 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-0ef86afd.js                     [39m[1m[2m  0.86 kB[22m[1m[22m[2m │ gzip:   0.55 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mentry-preview-b21759a2.js               [39m[1m[2m  1.12 kB[22m[1m[22m[2m │ gzip:   0.66 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mindex-1b441bc2.js                       [39m[1m[2m  2.59 kB[22m[1m[22m[2m │ gzip:   1.26 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-30b54f76.js                     [39m[1m[2m  3.21 kB[22m[1m[22m[2m │ gzip:   1.37 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36miframe-bdda0348.js                      [39m[1m[2m  3.82 kB[22m[1m[22m[2m │ gzip:   1.53 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mButton.stories-2200de81.js              [39m[1m[2m  4.47 kB[22m[1m[22m[2m │ gzip:   1.72 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-d01b88e8.js                     [39m[1m[2m  5.23 kB[22m[1m[22m[2m │ gzip:   2.41 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mindex-8b3efc3f.js                       [39m[1m[2m  7.18 kB[22m[1m[22m[2m │ gzip:   2.92 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-da31036b.js                     [39m[1m[2m  7.62 kB[22m[1m[22m[2m │ gzip:   1.55 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-c56bf6ac.js                     [39m[1m[2m  8.28 kB[22m[1m[22m[2m │ gzip:   3.17 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mColor-6VNJS4EI-67b214be.js              [39m[1m[2m 31.00 kB[22m[1m[22m[2m │ gzip:  11.73 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mpreview-2d30111f.js                     [39m[1m[2m 72.16 kB[22m[1m[22m[2m │ gzip:  24.46 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36m_getPrototype-1e53b583.js               [39m[1m[2m 78.40 kB[22m[1m[22m[2m │ gzip:  23.54 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mreact-18-0a210e0b.js                    [39m[1m[2m134.50 kB[22m[1m[22m[2m │ gzip:  43.38 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mentry-preview-docs-d14f77b2.js          [39m[1m[2m213.14 kB[22m[1m[22m[2m │ gzip:  66.84 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mDocsRenderer-NNNQARDV-0f6ada60.js       [39m[1m[33m545.54 kB[39m[22m[2m │ gzip: 179.28 kB[22m
+[2m../../tmp/chromatic--8428-C2k328vvmh9c/[22m[2massets/[22m[36mformatter-SWP5E3XI-3d11c231.js          [39m[1m[33m601.59 kB[39m[22m[2m │ gzip: 186.22 kB[22m
+[32m✓ built in 9.83s[39m
+info => Preview built (14 s)
+info => Output directory: /tmp/chromatic--8428-C2k328vvmh9c
+
+attention => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://storybook.js.org/telemetry
+
