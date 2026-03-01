@@ -38,5 +38,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Job summary
-        run: echo "Storybook updated: https://ailsablair.github.io/of_design_system" >> $GITHUB_STEP_SUMMARY
+      - name: Post link in job summary
+        run: echo "✅ Storybook updated: https://ailsablair.github.io/of_design_system" >> $GITHUB_STEP_SUMMARY
