@@ -4,13 +4,13 @@ ${this.documentation.map(e=>`	- ${e}`).join(`
 
 More info: ${t}
 `:""}`}},W=(t=>(t.PREVIEW_CLIENT_LOGGER="PREVIEW_CLIENT-LOGGER",t.PREVIEW_CHANNELS="PREVIEW_CHANNELS",t.PREVIEW_CORE_EVENTS="PREVIEW_CORE-EVENTS",t.PREVIEW_INSTRUMENTER="PREVIEW_INSTRUMENTER",t.PREVIEW_API="PREVIEW_API",t.PREVIEW_REACT_DOM_SHIM="PREVIEW_REACT-DOM-SHIM",t.PREVIEW_ROUTER="PREVIEW_ROUTER",t.PREVIEW_THEMING="PREVIEW_THEMING",t.RENDERER_HTML="RENDERER_HTML",t.RENDERER_PREACT="RENDERER_PREACT",t.RENDERER_REACT="RENDERER_REACT",t.RENDERER_SERVER="RENDERER_SERVER",t.RENDERER_SVELTE="RENDERER_SVELTE",t.RENDERER_VUE="RENDERER_VUE",t.RENDERER_VUE3="RENDERER_VUE3",t.RENDERER_WEB_COMPONENTS="RENDERER_WEB-COMPONENTS",t))(W||{}),f=class extends b{constructor(t){super(),this.data=t,this.category="PREVIEW_API",this.code=2,this.documentation="https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#using-implicit-actions-during-rendering-is-deprecated-for-example-in-the-play-function"}template(){return N`
-      We detected that you use an implicit action arg during ${this.data.phase} of your story.
+      We detected that you use an implicit action arg during ${this.data.phase} of your story.  
       ${this.data.deprecated?`
 This is deprecated and won't work in Storybook 8 anymore.
 `:""}
       Please provide an explicit spy to your args like this:
         import { fn } from '@storybook/test';
-        ...
+        ... 
         args: {
          ${this.data.name}: fn()
         }
