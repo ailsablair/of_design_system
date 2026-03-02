@@ -37,7 +37,7 @@ jobs:
       - name: Publish to Chromatic
         uses: chromaui/action@latest
         with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          projectToken: ${{ secrets.chpt_1d68aa94b4804da }}
           storybookBuildDir: storybook-static
 
       - name: Upload Storybook artifact
