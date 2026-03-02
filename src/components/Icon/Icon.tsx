@@ -6,7 +6,7 @@ import theme from '../../theme';
 
 export type IconName = keyof typeof CarbonIcons;
 
-export interface IconProps extends Omit<SvgIconProps, 'color'> {
+export interface IconProps extends Omit<SvgIconProps, 'color' | 'size'> {
   /** The name of the Carbon Icon to display */
   name?: IconName;
   /** The size of the icon */
