@@ -8,7 +8,7 @@ import { lightTheme, darkTheme } from '../path/to/themes';
 
 
 const GlobalStyles = () => (
-  <Global styles={css`
+  <Globalstyles={css`
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
