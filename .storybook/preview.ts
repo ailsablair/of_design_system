@@ -10,8 +10,8 @@ import { lightTheme, darkTheme } from '../src/theme';
 const GlobalStyles = () => (
   <Global styles={css`
     body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
   `} />
 );
 
