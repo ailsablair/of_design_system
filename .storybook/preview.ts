@@ -4,7 +4,7 @@ import { Global, css, ThemeProvider } from '@emotion/react';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 /* TODO: update import for your custom theme configurations */
-import { lightTheme, darkTheme } from '../path/to/themes';
+import { lightTheme, darkTheme } from '../src/theme';
 
 
 const GlobalStyles = () => (
