@@ -76,4 +76,6 @@ const theme = extendTheme({
   },
 });
 
+export const lightTheme = theme;
+export const darkTheme = theme;
 export default theme;
