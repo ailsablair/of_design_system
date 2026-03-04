@@ -1,5 +1,4 @@
-import type { Preview } from "@storybook/react";
-import '../src/index.css';   
+import type { Preview } from "@storybook/react";  
 import { Global, css, ThemeProvider } from '@emotion/react';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
