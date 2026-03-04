@@ -38,7 +38,7 @@ jobs:
         uses: chromaui/action@latest
         continue-on-error: true
         with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN || 'chpt_1d68aa94b4804da' }}
           storybookBuildDir: storybook-static
 
       - name: Upload Storybook artifact

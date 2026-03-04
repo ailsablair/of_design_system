@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic"
+    "chromatic": "npx chromatic --project-token=chpt_1d68aa94b4804da"
   },
   "dependencies": {
     "@carbon/icons-react": "^11.76.0",

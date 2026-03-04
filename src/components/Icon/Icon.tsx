@@ -50,6 +50,7 @@ export const Icon = ({
     <ThemeProvider theme={theme}>
       <SvgIcon
         component={Component}
+        viewBox="0 0 32 32"
         {...props}
         sx={{
           fontSize: size,

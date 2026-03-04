@@ -66780,6 +66780,7 @@ const D60 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty(
     Nr0,
     {
       component: i,
+      viewBox: "0 0 32 32",
       ...p,
       sx: {
         fontSize: r,
