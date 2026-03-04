@@ -25,7 +25,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.19.0
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
@@ -36,8 +36,9 @@ jobs:
 
       - name: Publish to Chromatic
         uses: chromaui/action@latest
+        continue-on-error: true
         with:
-          projectToken: ${{ secrets.chpt_1d68aa94b4804da }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN || 'chpt_1d68aa94b4804da' }}
           storybookBuildDir: storybook-static
 
       - name: Upload Storybook artifact

@@ -6,7 +6,7 @@ import theme from '../../theme';
 
 export type IconName = keyof typeof CarbonIcons;
 
-export interface IconProps extends Omit<SvgIconProps, 'color'> {
+export interface IconProps extends Omit<SvgIconProps, 'color' | 'size'> {
   /** The name of the Carbon Icon to display */
   name?: IconName;
   /** The size of the icon */
@@ -50,6 +50,7 @@ export const Icon = ({
     <ThemeProvider theme={theme}>
       <SvgIcon
         component={Component}
+        viewBox="0 0 32 32"
         {...props}
         sx={{
           fontSize: size,

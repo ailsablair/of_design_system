@@ -1,5 +1,14 @@
 import { extendTheme } from '@mui/joy/styles';
 
+declare module '@mui/joy/styles' {
+  interface Palette {
+    secondary: Palette['primary'];
+  }
+  interface ColorPalettePropOverrides {
+    secondary: true;
+  }
+}
+
 const theme = extendTheme({
   colorSchemes: {
     light: {
