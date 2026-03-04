@@ -47,5 +47,5 @@
     "storybook-vscode-component": "^1.0.9",
     "typescript": "^5.0.0",
     "vite": "^7.0.0"
-  "storybook": "start-storybook -p 6006 -c storybook watch-css -s •/sIc",}
+  }
 }
