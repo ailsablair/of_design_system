@@ -1,0 +1,23 @@
+{
+  "name": "Design Tokens",
+  "collections": {
+    "Variable collection": {
+      "modes": {
+        "desktop": [
+          "Variable collection.desktop.tokens.json"
+        ],
+        "tablet": [
+          "Variable collection.tablet.tokens.json"
+        ],
+        "mobile": [
+          "Variable collection.mobile.tokens.json"
+        ]
+      }
+    }
+  },
+  "styles": {
+    "text": [
+      "text.styles.tokens.json"
+    ]
+  }
+}

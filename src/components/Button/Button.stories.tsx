@@ -29,6 +29,22 @@ export const PrimarySolid: Story = {
     size: 'md',
     state: 'default',
   },
+  render: (args, { globals }) => {
+    const tokenSources = [
+      ...Object.values(globals.designTokens.collections).flatMap((collection) =>
+        Object.values(collection.modes).flat()
+      ),
+      ...Object.values(globals.designTokens.styles ?? {}).flat(),
+    ];
+    return (
+      <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
+        <Button {...args} />
+        <small style={{ opacity: 0.7 }}>
+          Design tokens: {tokenSources.join(', ')}
+        </small>
+      </div>
+    );
+  },
 };
 
 // Used for secondary actions, like "Cancel" or "Go Back"

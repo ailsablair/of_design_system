@@ -4,6 +4,7 @@ import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 /* TODO: update import for your custom theme configurations */
 import { lightTheme, darkTheme } from '../src/theme';
+import designTokensManifest from '../design-tokens/manifest.json';
 
 
 const GlobalStyles = () => (
@@ -15,6 +16,9 @@ const GlobalStyles = () => (
 );
 
 const preview: Preview = {
+  globals: {
+    designTokens: designTokensManifest,
+  },
   parameters: {
     controls: {
       matchers: {
