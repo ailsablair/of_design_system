@@ -1,6 +1,9 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
+import desktopTokens from '../../../design-tokens/Variable collection.desktop.tokens.json';
+
+const { colour } = desktopTokens;
 
 const meta = {
   title: 'Design System/Button',
@@ -29,22 +32,14 @@ export const PrimarySolid: Story = {
     size: 'md',
     state: 'default',
   },
-  render: (args, { globals }) => {
-    const tokenSources = [
-      ...Object.values(globals.designTokens.collections).flatMap((collection) =>
-        Object.values(collection.modes).flat()
-      ),
-      ...Object.values(globals.designTokens.styles ?? {}).flat(),
-    ];
-    return (
-      <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
-        <Button {...args} />
-        <small style={{ opacity: 0.7 }}>
-          Design tokens: {tokenSources.join(', ')}
-        </small>
-      </div>
-    );
-  },
+  render: (args) => (
+    <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
+      <Button {...args} />
+      <small style={{ opacity: 0.7 }}>
+        Token: colour.primary.dusk_blue.500 · {colour.primary.dusk_blue['500'].$value}
+      </small>
+    </div>
+  ),
 };
 
 // Used for secondary actions, like "Cancel" or "Go Back"
@@ -56,6 +51,14 @@ export const NeutralOutlined: Story = {
     size: 'md',
     state: 'default',
   },
+  render: (args) => (
+    <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
+      <Button {...args} />
+      <small style={{ opacity: 0.7 }}>
+        Token: colour.base.neutral.charcoal.500 · {colour.base.neutral.charcoal['500'].$value}
+      </small>
+    </div>
+  ),
 };
 
 // Displays the disabled state during data fetching or API cross-referencing
@@ -67,6 +70,14 @@ export const DisabledState: Story = {
     size: 'md',
     state: 'disabled',
   },
+  render: (args) => (
+    <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
+      <Button {...args} />
+      <small style={{ opacity: 0.7 }}>
+        Token: colour.primary.dusk_blue.500 · {colour.primary.dusk_blue['500'].$value} (disabled)
+      </small>
+    </div>
+  ),
 };
 
 // Test Sky Blue secondary color
@@ -78,6 +89,14 @@ export const SecondarySkyBlue: Story = {
     size: 'md',
     state: 'default',
   },
+  render: (args) => (
+    <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
+      <Button {...args} />
+      <small style={{ opacity: 0.7 }}>
+        Token: colour.primary.sky_blue.500 · {colour.primary.sky_blue['500'].$value}
+      </small>
+    </div>
+  ),
 };
 
 // Test Lava Orange danger color
@@ -89,4 +108,12 @@ export const DangerLavaOrange: Story = {
     size: 'md',
     state: 'default',
   },
+  render: (args) => (
+    <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
+      <Button {...args} />
+      <small style={{ opacity: 0.7 }}>
+        Token: colour.secondary.lava_orange.500 · {colour.secondary.lava_orange['500'].$value}
+      </small>
+    </div>
+  ),
 };
