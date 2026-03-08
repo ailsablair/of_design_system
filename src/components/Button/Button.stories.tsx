@@ -3,13 +3,22 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 import { DesignTokensManifest } from '../../types/storybook';
 
+/**
+ * Buttons allow users to take actions, and make choices, with a single tap.
+ * The Button component should be used for primary actions in the application.
+ */
 const meta = {
   title: 'Design System/Button',
   component: Button,
+  tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    docs: {
+      description: {
+        component: 'Primary action button for the Out&Found design system.',
+      },
+    },
   },
-  tags: ['autodocs'],
   argTypes: {
     variant: { control: 'select', options: ['solid', 'outlined', 'ghost'] },
     color: { control: 'select', options: ['primary', 'secondary', 'neutral', 'danger'] },
@@ -21,7 +30,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Used for primary calls to action, like "Submit Report" or "Generate Matrix"
+/**
+ * Primary solid button, used for main calls to action.
+ */
 export const PrimarySolid: Story = {
   args: {
     label: 'Submit Case File',
@@ -53,7 +64,9 @@ export const PrimarySolid: Story = {
   },
 };
 
-// Used for secondary actions, like "Cancel" or "Go Back"
+/**
+ * Neutral outlined button for secondary actions.
+ */
 export const NeutralOutlined: Story = {
   args: {
     label: 'Cancel Process',
@@ -64,7 +77,9 @@ export const NeutralOutlined: Story = {
   },
 };
 
-// Displays the disabled state during data fetching or API cross-referencing
+/**
+ * Disabled state for when actions are unavailable.
+ */
 export const DisabledState: Story = {
   args: {
     label: 'Syncing with NamUs...',
@@ -75,7 +90,9 @@ export const DisabledState: Story = {
   },
 };
 
-// Test Sky Blue secondary color
+/**
+ * Secondary color variant using Sky Blue.
+ */
 export const SecondarySkyBlue: Story = {
   args: {
     label: 'Download Evidence',
@@ -86,7 +103,9 @@ export const SecondarySkyBlue: Story = {
   },
 };
 
-// Test Lava Orange danger color
+/**
+ * Danger color variant using Lava Orange.
+ */
 export const DangerLavaOrange: Story = {
   args: {
     label: 'Delete File',
