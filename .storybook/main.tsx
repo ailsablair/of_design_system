@@ -1,8 +1,12 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   staticDirs: ["../design-tokens"],
   addons: ["@storybook/addon-links", "@storybook/addon-themes"],
   framework: {
