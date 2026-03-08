@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
+import { DesignTokensManifest } from '../../types/storybook';
 
 const meta = {
   title: 'Design System/Button',
@@ -30,18 +31,23 @@ export const PrimarySolid: Story = {
     state: 'default',
   },
   render: (args, { globals }) => {
-    const tokenSources = [
-      ...Object.values(globals.designTokens.collections).flatMap((collection) =>
-        Object.values(collection.modes).flat()
-      ),
-      ...Object.values(globals.designTokens.styles ?? {}).flat(),
-    ];
+    const designTokens = globals.designTokens as DesignTokensManifest | undefined;
+    const tokenSources = designTokens
+      ? [
+          ...Object.values(designTokens.collections).flatMap((collection) =>
+            Object.values(collection.modes).flat()
+          ),
+          ...Object.values(designTokens.styles ?? {}).flat(),
+        ]
+      : [];
     return (
       <div style={{ display: 'grid', gap: 12, justifyItems: 'center' }}>
         <Button {...args} />
-        <small style={{ opacity: 0.7 }}>
-          Design tokens: {tokenSources.join(', ')}
-        </small>
+        {tokenSources.length > 0 && (
+          <small style={{ opacity: 0.7 }}>
+            Design tokens: {tokenSources.join(', ')}
+          </small>
+        )}
       </div>
     );
   },
