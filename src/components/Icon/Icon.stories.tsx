@@ -5,10 +5,21 @@ import { Stack, Typography } from '@mui/joy';
 import { ThemeProvider } from '@mui/joy/styles';
 import theme from '../../theme';
 
+/**
+ * Icons are visual representations of objects, action, or ideas.
+ * We use IBM Carbon Icons as our official icon library.
+ */
 const meta: Meta<typeof Icon> = {
   title: 'OutAndFound/Icon',
   component: Icon,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Icon component wrapper for Carbon Icons.',
+      },
+    },
+  },
   argTypes: {
     color: {
       control: 'select',
@@ -24,6 +35,9 @@ const meta: Meta<typeof Icon> = {
 export default meta;
 type Story = StoryObj<typeof Icon>;
 
+/**
+ * Standard primary icon.
+ */
 export const Primary: Story = {
   args: {
     name: 'Add',
@@ -32,6 +46,9 @@ export const Primary: Story = {
   },
 };
 
+/**
+ * A gallery of available icon sizes and colors.
+ */
 export const Gallery: Story = {
   render: () => (
     <ThemeProvider theme={theme}>
