@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "postinstall": "node scripts/post-install.js",
     "dev": "vite",
     "build": "tsc && vite build",
     "storybook": "storybook dev -p 6006",
