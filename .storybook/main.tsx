@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
-  staticDirs: ["../design-tokens"],
+  staticDirs: ["../design-tokens", "../src/assets"],
   addons: ["@storybook/addon-links", "@storybook/addon-themes"],
   framework: {
     name: "@storybook/react-vite",

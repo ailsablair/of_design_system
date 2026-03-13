@@ -1,29 +1,131 @@
 <style type="text/css">
+  /* Aileron Fonts */
   @font-face {
-    font-family: 'Aileron', 'Barnebok';
-    src: url('assets/Aileron-BlackItalic-webfont.woff') format('woff'),
-         url('assets/Aileron-Black-webfont.woff') format('woff'),
-         url('assets/Aileron-BlackItalic-webfont.woff') format('woff'),
-         url('assets/Aileron-Bold-webfont.woff') format('woff'),
-         url('assets/Aileron-BoldItalic-webfont.woff') format('woff'),
-         url('assets/Aileron-Heavy-webfont.woff') format('woff'),
-         url('assets/Aileron-HeavyItalic-webfont.woff') format('woff'),
-         url('assets/Aileron-Italic-webfont.woff') format('woff'),
-         url('assets/Aileron-Light-webfont.woff') format('woff'),
-         url('assets/Aileron-LightItalic-webfont.woff') format('woff'),
-         url('assets/Aileron-Regular-webfont.woff') format('woff'),
-         url('assets/Aileron-SemiBold-webfont.woff') format('woff'),
-         url('assets/Aileron-SemiBoldItalic-webfont.woff') format('woff'),
-         url('assets/Aileron-Thin-webfont.woff') format('woff'),
-         url('assets/Aileron-ThinItalic-webfont.woff') format('woff'),
-         url('assets/Aileron-UltraLight-webfont.woff') format('woff'),
-         url('assets/Aileron-UltraLightItalic-webfont.woff') format('woff'),
-         url('assets/BarnebokBlack.woff') format('woff'),
-         url('assets/BarnebokBold.woff') format('woff'),
-         url('assets/BarnebokLight.woff') format('woff'),
-         url('assets/BarnebokMedium.woff') format('woff'),
-         url('assets/BarnebokRegular.woff') format('woff'),
-    font-weight: inherits: font-weight: ;
-    font-style: inherits: font-style;  ;;
+    font-family: 'Aileron';
+    src: url('aileron-ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-ultralightitalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-thin.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-thinitalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-light.woff') format('woff');
+    font-weight: 300; /* or 400? Usually light is 300, thin 200, ultralight 100 or thin 100, ultralight 200, light 300 */
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-lightitalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-semibolditalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-bolditalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-heavyitalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Aileron';
+    src: url('aileron-blackitalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  /* Barnebok Fonts */
+  @font-face {
+    font-family: 'Barnebok';
+    src: url('barnebok-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Barnebok';
+    src: url('barnebok-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Barnebok';
+    src: url('barnebok-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Barnebok';
+    src: url('barnebok-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Barnebok';
+    src: url('barnebok-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
   }
 </style>
