@@ -10,7 +10,7 @@ import theme from '../../theme';
  * We use IBM Carbon Icons as our official icon library.
  */
 const meta: Meta<typeof Icon> = {
-  title: 'OutAndFound/Icon',
+  title: 'Foundations/Icon',
   component: Icon,
   tags: ['autodocs'],
   parameters: {
